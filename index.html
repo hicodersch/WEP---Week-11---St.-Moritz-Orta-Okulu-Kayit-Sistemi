@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>St.Moritz School Registration</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        Information of Student
+                    </div>
+                    <div class="card-body">
+                        <form id="addTaskForm">
+                            <div class="input-group mb-3">
+                                <div class="col-12">
+                                    <label for="firstname" class="ml-3 mb-0">Firstname</label>
+                                    <input id="firstname" name="firstname" type="text" class="form-control"
+                                        placeholder="Firstname">
+                                </div>
+                                <div class="col-12">
+                                    <label for="lastname" class="ml-3 mb-0 mt-1">Lastname</label>
+                                    <input id="lastname" name="lastname" type="text" class="form-control"
+                                        placeholder="Lastname">
+                                </div>
+                                <div class="col-12">
+                                    <label for="age" class="ml-3 mb-0 mt-1">Age</label>
+                                    <input id="age" name="age" type="text" class="form-control" placeholder="Age">
+                                </div>
+                                <div class="input-group-append">
+                                </div>
+                            </div>
+                        </form>
+                        <button class="btn btn-outline-info offset-5" type="submit" id="btnAddNewTask">
+                            Register
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header">
+                        Registered Students
+                    </div>
+                    <table class="table" id="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Number</th>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Age</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="addedStudents">
+                        </tbody>
+                    </table>
+                    <div class="card-footer" id="numberOfStudent">
+                        Number of Student : 0
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./function.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
